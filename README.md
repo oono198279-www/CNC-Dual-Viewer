@@ -1,10 +1,16 @@
-# CNC Dual Viewer — 第1段階（単一HTML版）
+# CNC Dual Viewer
 
-`index.html` をブラウザで開くだけで動作する、読み取り専用のCNCプログラム左右比較ビューアです。外部CDNやサーバー通信は使用しません。
+読み取り専用のCNCプログラム左右比較PWAです。MAIN/BACKの待合わせコードを検出し、対応行を自動整列します。外部CDNやCNCデータの送信処理は使用しません。
 
 公開版: <https://oono198279-www.github.io/CNC-Dual-Viewer/>
 
 > CNCプログラムはブラウザ内でのみ処理されます。ファイルへの書き込み機能や外部送信処理はありません。
+
+## PWA
+
+公開URLをEdge、Chrome、Safariで開き、ブラウザのインストール／ホーム画面追加機能から利用できます。インストール後はアプリシェルだけをキャッシュしてオフライン起動します。読み込んだCNCプログラム本文はCache StorageやlocalStorageへ保存しません。
+
+Service Workerのキャッシュ対象は `index.html`、manifest、PWAアイコンだけです。更新時はキャッシュ名のバージョンが変わり、旧キャッシュを削除します。
 
 ## ローカル確認
 

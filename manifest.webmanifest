@@ -1,0 +1,16 @@
+{
+  "name": "CNC Dual Viewer",
+  "short_name": "CNC Viewer",
+  "description": "CNCメイン・バックのプログラムを左右比較し、待合わせコードを自動整列する閲覧専用ビューア",
+  "id": "./",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#0b1118",
+  "theme_color": "#101923",
+  "icons": [
+    {"src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable"},
+    {"src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable"}
+  ]
+}
